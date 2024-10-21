@@ -1,0 +1,23 @@
+/*aqui coloco la imagen del body*/
+body{
+    background-image: url(../src/assets/image/fondo_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body_fondo{
+    background-image: url(../src/assets/image/fondo_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
