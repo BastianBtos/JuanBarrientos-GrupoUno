@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/public/steam_240x300-min_3.jpg')",
-
+        'hero-pattern2': "url('/public/steam2.jpg')",
       }
     },
   },

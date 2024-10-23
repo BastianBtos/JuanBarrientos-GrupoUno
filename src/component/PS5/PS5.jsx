@@ -1,5 +1,5 @@
 import React from "react";
-import Texto_2 from "../Texto/Texto_2.jsx";
+import Texto_2 from "../Text/Text_2.jsx";
 
 function PS5() {
 

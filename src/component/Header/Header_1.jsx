@@ -1,5 +1,5 @@
 import "./Header.css"
-import logo from "../../assets/image/steam.svg"
+import logo from "../../../public/steam.svg"
 import {Link} from 'react-router-dom';
 
 
@@ -11,20 +11,19 @@ function Header_componente() {
         cerrar.classList.toggle('ponerx');
     }
     return (
-        <header className="header_componente">
+        <header className="header_componente p-0 m-0">
             <div className="barras">
                 <button onClick={menu} className='boton_menu margen_boton' id='x'></button>
             </div>
             <nav id='menu' className="desplegable">
                 <ul className="nav_lateral flex justify-center items-center">
-
                     <li className="m-2 hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="" className="estilo_bloque hover padding_lateral">Inicio</Link></li>
-                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/Productos" className="estilo_bloque hover padding_lateral">Productos</Link></li>
-                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/SteamDeck" className="estilo_bloque hover padding_lateral">SteamDeck</Link></li>
-                    <Link to="" className="m-2 logo_barra hover:scale-110 transition-all duration-500 cursor-pointer"><img id="logo" src={logo} alt="..."/></Link>
-                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/XboxSeries" className="estilo_bloque hover padding_lateral">XboxSeries</Link></li>
-                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/PS5" className="estilo_bloque hover padding_lateral">PS5</Link></li>
-                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/NintendoSwitch" className="estilo_bloque hover padding_lateral">NintendoSwitch</Link></li>
+                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/productos" className="estilo_bloque hover padding_lateral">Productos</Link></li>
+                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/steamDeck" className="estilo_bloque hover padding_lateral">SteamDeck</Link></li>
+                    <Link to="/" className="m-2 logo_barra hover:scale-110 transition-all duration-500 cursor-pointer"><img id="logo" src={logo} alt="..."/></Link>
+                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/xboxSeries" className="estilo_bloque hover padding_lateral">XboxSeries</Link></li>
+                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/ps5" className="estilo_bloque hover padding_lateral">PS5</Link></li>
+                    <li className="m-2 estilo_lista hover:scale-110 transition-all duration-500 cursor-pointer"><Link to="/nintendoswitch" className="estilo_bloque hover padding_lateral">NintendoSwitch</Link></li>
                 </ul>
             </nav>
         </header>

@@ -7,9 +7,9 @@ import SteamDeck from "../src/component/SteamDeck/SteamDeck.jsx";
 import XboxSeries from "./component/XboxSeries/XboxSeries.jsx";
 import PS5 from "./component/PS5/PS5.jsx";
 import NintendoSwitch from "./component/NintendoSwitch/NintendoSwitch.jsx";
-import SobreNosotros from "./component/SobreNosotros/SobreNosotros.jsx";
-import Historia from "./component/Historia/Historia.jsx";
-import Contactanos from "./component/Contactanos/Contactanos.jsx";
+import About from "./component/About/About.jsx";
+import History from "./component/History/History.jsx";
+import Contact from "./component/Contact/Contact.jsx";
 import Products from "./component/Products/Products.jsx";
 function App() {
 
@@ -17,17 +17,17 @@ function App() {
       <>
           <BrowserRouter>
               <Header/>
-                  <Routes>
-                      <Route path="" element={<Home/>}/>
-                      <Route path="/SteamDeck" element={<SteamDeck/>}/>
-                      <Route path="/XboxSeries" element={<XboxSeries/>}/>
-                      <Route path="/PS5" element={<PS5/>}/>
-                      <Route path="/NintendoSwitch" element={<NintendoSwitch/>}/>
-                      <Route path="/SobreNosotros" element={<SobreNosotros/>}/>
-                      <Route path="/Historia" element={<Historia/>}/>
-                      <Route path="/Contactanos" element={<Contactanos/>}/>
-                      <Route path="/Productos" element={<Products/>}/>
-                  </Routes>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/steamdeck" element={<SteamDeck/>}/>
+                  <Route path="/xboxseries" element={<XboxSeries/>}/>
+                  <Route path="/ps5" element={<PS5/>}/>
+                  <Route path="/nintendoswitch" element={<NintendoSwitch/>}/>
+                  <Route path="/sobrenosotros" element={<About/>}/>
+                  <Route path="/historia" element={<History/>}/>
+                  <Route path="/contactanos" element={<Contact/>}/>
+                  <Route path="/productos" element={<Products/>}/>
+              </Routes>
               <Footer/>
           </BrowserRouter>
       </>

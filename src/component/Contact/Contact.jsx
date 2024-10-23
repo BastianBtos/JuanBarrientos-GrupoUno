@@ -1,5 +1,5 @@
-import Texto_2 from "../Texto/Texto_2.jsx";
-function Contactanos() {
+import Texto_2 from "../Text/Text_2.jsx";
+function Contact() {
 
     return (
         <>
@@ -39,4 +39,4 @@ function Contactanos() {
     )
 }
 
-export default Contactanos
+export default Contact

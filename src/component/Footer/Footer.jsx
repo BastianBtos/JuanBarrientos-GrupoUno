@@ -1,8 +1,8 @@
 import "./Footer.css";
-import facebook from "../../assets/image/facebook.svg";
-import twiter from "../../assets/image/twitter-x.svg";
-import steam from "../../assets/image/steam_red.svg";
-import instagram from "../../assets/image/instagram.svg";
+import facebook from "../../../public/facebook.svg";
+import twiter from "../../../public/twitter-x.svg";
+import steam from "../../../public/steam_red.svg";
+import instagram from "../../../public/instagram.svg";
 import {Link} from 'react-router-dom';
 
 const Footer_1 = () => {
@@ -26,9 +26,9 @@ const Footer_1 = () => {
                     </div>
                     <div className="sb_footer-links_div">
                         <h4>Compañia</h4>
-                        <Link to="/SobreNosotros" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Sobre nosotros</p></Link>
-                        <Link to="/Historia" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Historia</p></Link>
-                        <Link to="/Contactanos" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Contactanos</p></Link>
+                        <Link to="/sobrenosotros" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Sobre nosotros</p></Link>
+                        <Link to="/historia" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Historia</p></Link>
+                        <Link to="/contactanos" className="hover:scale-110 transition-all duration-500 cursor-pointer text-[white] hover:text-[red]"><p>Contactanos</p></Link>
                     </div>
                     <div className="sb_footer-links_div">
                         <h4>Nuestras Redes</h4>
