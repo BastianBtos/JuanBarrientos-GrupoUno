@@ -2,7 +2,7 @@ import './App.css';
 import Home from './component/Home/Home.jsx';
 import Footer from '../src/component/Footer/Footer.jsx';
 import Header from '../src/component/Header/Header_1.jsx';
-import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import About from "./component/About/About.jsx";
 import History from "./component/History/History.jsx";
 import Contact from "./component/Contact/Contact.jsx";
