@@ -33,7 +33,7 @@ export const products = [
         despcription: 'Nintendo Switch Oled, 500gb almacenamiento, color blanco',
         stock: 5,
         img: 'https://www.falabella.com/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/123426297_01/width=340,height=340,quality=70,format=webp,fit=pad',
-        category: "NintendoSwitch"
+        category: "nintendoswitch"
     },
     {
         id: 5,
@@ -98,7 +98,7 @@ export const products = [
         despcription: 'Bateria para Mando Xbox series S y X',
         stock: 35,
         img: 'https://www.falabella.com/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/136298378_01/width=340,height=340,quality=70,format=webp,fit=pad',
-        category: "xbox"
+        category: 'xbox'
     },
     {
         id: 12,
@@ -107,7 +107,7 @@ export const products = [
         despcription: 'Nintendo Switch lite, 500gb almacenamiento, color dorado hyrule edition',
         stock: 20,
         img: 'https://www.falabella.com/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/17243815_01/width=340,height=340,quality=70,format=webp,fit=pad',
-        category: "NintendoSwitch"
+        category: "nintendoswitch"
     },
     {
         id: 13,
@@ -116,7 +116,7 @@ export const products = [
         despcription: 'Nintendo Switch Oled, 1000gb almacenamiento, zelda tears edition',
         stock: 30,
         img: 'https://www.falabella.com/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/127835382_01/width=340,height=340,quality=70,format=webp,fit=pad',
-        category: "NintendoSwitch"
+        category: "nintendoswitch"
     },
     {
         id: 14,
@@ -130,10 +130,28 @@ export const products = [
 
 ]
 
-export const getProducts = () =>{
-    return new Promise((res) =>{
-        setTimeout(() =>{
+export const getProducts = () => {
+    return new Promise((res) => {
+        setTimeout(() => {
             res(products);
-        }, 2000);
-    })
-}
+        }, 1000);
+    });
+};
+
+export const getProductById = (id) => {
+    return new Promise((res) => {
+        const productoFiltrado = products.find((product) => product.id === parseInt(id));
+        setTimeout(() => {
+            res(productoFiltrado);
+        }, 1000);
+    });
+};
+
+export const getProductByCategory = (category) => {
+    return new Promise((res) => {
+        const productosFiltrados = products.filter((product) => product.category === category);
+        setTimeout(() => {
+            res(productosFiltrados);
+        }, 1000);
+    });
+};
