@@ -1,9 +1,6 @@
 import './Home.css';
 import React from "react";
 import Text_1 from "../Text/Text_1.jsx";
-import Item_list from "../ItemList/Item_list.jsx";
-import Loading from "../Loading/Loading.jsx"
-
 
 function Home() {
     return (
