@@ -5,7 +5,7 @@ import Text_1 from "../Text/Text_1.jsx";
 function Home() {
     return (
         <>
-            <div className="text-[30px]">
+            <div className="text-[30px] bg-[white]">
                 <marquee><p>Las mejores consolas solo aqui</p></marquee>
             </div>
             <div className="bg-hero-pattern bg-cover bg-fixed h-[700px] bg-center">
