@@ -91,7 +91,7 @@ export default function ItemDetail() {
 
                         <ul className="mt-8 space-y-2 ">
                             <li className="flex items-center text-left text-sm font-medium text-[white]">
-                                Envío gratuito a todo el mundo
+                                'Envío gratuito al mundo'
                             </li>
 
                             <li className="flex items-center text-left text-sm font-medium text-[white]">
