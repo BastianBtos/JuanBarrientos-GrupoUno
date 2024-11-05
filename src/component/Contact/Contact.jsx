@@ -5,7 +5,7 @@ function Contact() {
         <>
             <div>
                 <div className="px-4 sm:px-0 text-center">
-                    <h3 className="text-[35px] font-semibold leading-7 text-[white] m-10">Contactate con Nosotros</h3>
+                    <h3 className="text-[35px] font-semibold leading-7 text-[white] mt-[120px]">Contactate con Nosotros</h3>
                 </div>
                 <div className="mt-6 border-t border-gray-100">
                     <dl className="divide-y divide-gray-100">

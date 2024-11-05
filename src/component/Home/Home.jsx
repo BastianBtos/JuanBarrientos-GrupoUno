@@ -1,23 +1,34 @@
 import './Home.css';
-import React from "react";
 import Text_1 from "../Text/Text_1.jsx";
 
 function Home() {
     return (
         <>
-            <div className="text-[30px] bg-[white]">
-                <marquee><p>Las mejores consolas solo aqui</p></marquee>
+            <div className="text-[25px] bg-[white] uppercase ">
+                <marquee scrollamount="15"><p>Descubre una selección excepcional de las mejores consolas en un solo
+                    lugar. Desde las más potentes, con gráficos impresionantes y carga rápida, hasta opciones
+                    innovadoras que transforman la experiencia de juego, tenemos algo para cada tipo de gamer.</p>
+                </marquee>
             </div>
-            <div className="bg-hero-pattern bg-cover bg-fixed h-[700px] bg-center">
-            <div className="bg-black bg-opacity-10">
-                <Text_1 Titulo="BIENVENIDO A STEAM CONSOLAS"
-                        Parrafo="¡Bienvenido a steam consolas! 🎮
-                         Aquí encontrarás todo lo que necesitas para disfrutar de la mejor experiencia de juego. Desde las últimas novedades hasta accesorios imprescindibles, tenemos lo que buscas. Navega por nuestra selección, descubre ofertas exclusivas y prepárate para sumergirte en mundos increíbles.
-                         ¡Comienza tu aventura con nosotros hoy mismo!"/>
+
+            <div className="row bg-hero-pattern3 bg-cover bg-fixed">
+                <div className="bg-hero-pattern bg-cover h-[700px] bg-center"/>
+                <div className="col-6 mt-5 mb-5 justify-items-center text-justify">
+                    <Text_1 Titulo="BIENVENIDO A STEAM CONSOLAS"
+                            Parrafo="¡Bienvenido a steam consolas! 🎮
+                                 Aquí encontrarás todo lo que necesitas para disfrutar de la mejor experiencia de juego. Desde las últimas novedades hasta accesorios imprescindibles, tenemos lo que buscas. Navega por nuestra selección, descubre ofertas exclusivas y prepárate para sumergirte en mundos increíbles.
+                                 ¡Comienza tu aventura con nosotros hoy mismo!"/>
+                </div>
+                <div className="col-6 mt-5 mb-5 justify-items-center">
+                    <iframe className="rounded w-full h-full" src="https://www.youtube.com/embed/5xOJ6ir8ME0?si=DFQ6x3MstvErde_-"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                </div>
             </div>
-        </div>
-</>
-)
+
+        </>
+    )
 }
 
 export default Home

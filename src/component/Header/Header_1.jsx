@@ -11,7 +11,7 @@ function Header_componente() {
         cerrar.classList.toggle('ponerx');
     }
     return (
-        <header className="header_componente p-0 m-0">
+        <header className="header_componente shadow-md w-full pt-0 top-0 left-0 position-fixed z-10 m-88">
             <div className="barras">
                 <button onClick={menu} className='boton_menu margen_boton' id='x'></button>
             </div>

@@ -14,10 +14,12 @@ function App() {
   return (
       <>
           <BrowserRouter>
-              <Header/>
+              <section className="m-[88px]">
+                  <Header/>
+              </section>
               <Routes>
                   <Route path="/" element={<Home/>}/>
-                  <Route path='/products/:productId' element={<ItemDetail />} />
+                  <Route path='/products/:productId' element={<ItemDetail/>}/>
                   <Route path="/sobrenosotros" element={<About/>}/>
                   <Route path="/historia" element={<History/>}/>
                   <Route path="/contactanos" element={<Contact/>}/>
